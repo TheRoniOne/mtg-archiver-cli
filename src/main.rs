@@ -1,3 +1,5 @@
+mod retrieve;
 fn main() {
-    println!("Hello, world!");
+    let body = retrieve::retrieve_bulk_data_info().unwrap().text().unwrap();
+    println!("{:#?}", body)
 }
