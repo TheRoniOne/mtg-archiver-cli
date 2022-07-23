@@ -8,3 +8,5 @@ edition = "2021"
 [dependencies]
 diesel = { version = "1.4.8", features = ["sqlite"] }
 reqwest = { version = "0.11.11", features = ["json", "gzip", "blocking"] }
+serde = { version = "1.0.140", features = ["derive"] }
+serde_json = "1.0.82"
